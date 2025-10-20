@@ -36,7 +36,7 @@ Abaixo estão os projetos em ordem crescente de complexidade:
 
 ## Contato
 
-- **LinkedIn:** [(https://www.linkedin.com/in/matheusdinizsilva/)]
+- **LinkedIn:** [https://www.linkedin.com/in/matheusdinizsilva/]
 - **E-mail:** matheus.dinizbrito@gmail.com
 
 ---
