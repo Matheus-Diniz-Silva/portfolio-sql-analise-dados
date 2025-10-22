@@ -20,9 +20,10 @@ Sou um Analista de Dados em formação e aqui documentoo minha jornada de aprend
 Abaixo estão os projetos em ordem crescente de complexidade:
 
 ### [Projeto 01: Análise de Vendas Básica](/01-projeto-basico)
-**Objetivo:** Análise inicial de um dataset de vendas para identificar tendências.
-- **Conceitos-chave:** Filtros, agrupamentos, ordenação.
-- **Resultados:** Top 10 produtos mais vendidos, vendas por região.
+**Objetivo:** Análise inicial de dataset de vendas para identificar tendências e métricas fundamentais.
+- **Conceitos-chave:** Agregações, filtros, ordenação, análise temporal
+- **Resultados:** Padrões de sazonalidade, eficiência por tamanho de deal, clientes mais valiosos
+- **Insights:** Novembro como mês de pico (+96% crescimento), Large deals com 25% do faturamento
 
 ### [Projeto 02: Análise de E-commerce](/02-projeto-intermediario)
 **Objetivo:** Análise completa de um e-commerce fictício.
