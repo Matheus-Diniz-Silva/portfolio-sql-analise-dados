@@ -21,8 +21,8 @@ Análise inicial de um dataset de vendas para identificar tendências e métrica
 ### Estratégia de Negócios
 - **Negócios Medium são a base**: 49% do faturamento com volume equilibrado
 - **Large Deals super eficientes**: Apenas 5.56% das vendas geram 25% do faturamento
-- **Ticket médio variável**:
-- **Small: $2,062 | Medium: $4,398 | Large: $8,294
+- **Ticket médio variável**: 
+  - Small: $2,062 | Medium: $4,398 | Large: $8,294
 
 ### Distribuição Geográfica
 - 19 países atendidos
