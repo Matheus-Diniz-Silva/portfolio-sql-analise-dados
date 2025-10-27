@@ -18,12 +18,6 @@ Dataset completo de um e-commerce brasileiro com dados reais de vendas, clientes
 - **`olist_geolocation_dataset`** - Dados geográficos
 - **`product_category_name_translation`** - Traduções de categorias
 
-## Modelo Relacional
-CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
-→ ORDER_PAYMENTS
-→ ORDER_REVIEWS
-ORDER_ITEMS → SELLERS
-
 ## Estatísticas Principais
 - **Período**: Set/2016 a Out/2018 (773 dias)
 - **Total de clientes**: 96.478 (100% única compra)
