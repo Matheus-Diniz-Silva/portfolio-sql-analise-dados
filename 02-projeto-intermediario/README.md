@@ -61,9 +61,7 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 - **03_analise_clientes.sql** - Comportamento e retenção (insight principal)
 - **04_analise_entregas.sql** - Logística e satisfação
 
-## Insights Técnicos da Análise
-
-### Análise de Cohort Implementada
+## Análise de Cohort Implementada
 - Métrica calculada: TIMESTAMPDIFF(MONTH, primeira_compra, compra_atual)
 - Agrupamento por mês de ingresso (cohort_month)
 - Cálculo de retenção mês a mês
