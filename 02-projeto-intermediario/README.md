@@ -1,24 +1,31 @@
 # Projeto 02: Análise de E-commerce Complexa
 
 ## Objetivo
-Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionadas, demonstrando habilidades em SQL intermediário-avançado.
+Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionadas, demonstrando habilidades em SQL intermediário-avançado e identificação de insights estratégicos de negócio.
 
 ## Dataset
 **Brazilian E-Commerce Dataset by Olist**
 - Período: Set/2016 a Out/2018 (773 dias)
 - 9 tabelas relacionadas
-- Dados reais de marketplace brasileiro
+- 96.478 clientes únicos
+- R$13.4M+ em vendas analisadas
 
-## Estrutura de Tabelas
-- `olist_customers_dataset` - Dados dos clientes
-- `olist_orders_dataset` - Pedidos e status
-- `olist_order_items_dataset` - Itens dos pedidos
-- `olist_products_dataset` - Catálogo de produtos
-- `olist_sellers_dataset` - Vendedores
-- `olist_order_payments_dataset` - Pagamentos
-- `olist_order_reviews_dataset` - Avaliações
-- `olist_geolocation_dataset` - Dados geográficos
-- `product_category_name_translation` - Traduções
+## Principais Descobertas
+
+### DIAGNÓSTICO CRÍTICO: PROBLEMA DE RETENÇÃO
+- **0% de retenção de clientes** - todos os 96.478 clientes fizeram apenas 1 compra
+- **Empresa 100% dependente** de aquisição de novos clientes
+- **Oportunidade perdida** em receita recorrente
+
+### PERFORMANCE COMERCIAL
+- **Crescimento consistente** de base de clientes
+- **Pico em Nov/2017**: 7.289 novos clientes (Black Friday)
+- **SP domina faturamento**: 50% das vendas (R$5M+)
+
+### COMPORTAMENTO DE GASTO
+- **Ticket médio variável**: R$125 (SP) até R$217 (PB)
+- **Estados menores = tickets maiores**: PB, AL, AC com melhores performances
+- **Clientes high-ticket**: Compram 1x (R$4K-13K) e não retornam
 
 ## Habilidades Demonstradas
 - CTEs (Common Table Expressions)
@@ -26,20 +33,42 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 - Funções de Janela (Window Functions)
 - Análise de Cohort e Retenção
 - Subqueries Correlacionadas
+- Análise Geográfica Avançada
 
 ## Queries Desenvolvidas
-1. `01_modelagem_dados.sql` - Análise da estrutura e relacionamentos
-2. `02_analise_vendas.sql` - Performance comercial e sazonalidade
-3. `03_analise_clientes.sql` - Comportamento e retenção
-4. `04_analise_entregas.sql` - Logística e satisfação
 
-## Insights a Explorar
-- Padrões de sazonalidade em 2+ anos de dados
-- Taxa de retenção de clientes
+### 1. `01_modelagem_dados.sql`
+- Análise da estrutura e relacionamentos
+- Verificação de chaves primárias e estrangeiras
+- Período temporal dos dados
+
+### 2. `02_analise_vendas.sql`
+- Evolução mensal de vendas
 - Performance por categoria de produto
-- Correlação entre tempo de entrega e avaliações
-- Análise de métodos de pagamento
+- Top produtos e vendedores
+
+### 3. `03_analise_clientes.sql`
+- **Análise de cohort** (retenção zero identificada)
+- Clientes mais valiosos (Lifetime Value)
+- Comportamento geográfico por estado
+- Estatísticas de recorrência
+
+## Recomendações Estratégicas
+
+### PRIORIDADE MÁXIMA: PROGRAMA DE FIDELIDADE
+1. **Criar programa de pontos** e recompensas
+2. **Campanhas de remarketing** pós-30 dias
+3. **Ofertas exclusivas** para "clientes perdidos"
+4. **Clube VIP** para clientes high-ticket (R$4K+)
+
+### METAS DE CURTO PRAZO
+- **3 meses**: 5% de retenção no mês 2
+- **6 meses**: 10% de clientes com 2+ compras
+- **1 ano**: 15% de repeat rate
+
+## Impacto do Projeto
+Esta análise identificou um problema estratégico crítico que impacta diretamente a sustentabilidade do negócio, demonstrando como SQL avançado pode gerar insights com impacto financeiro significativo.
 
 ---
 
-*"Dados relacionais abrem portas para análises estratégicas profundas."*
+*"Dados não são apenas números - são histórias de negócio esperando para ser contadas. Aqui, contamos a história de 96.478 oportunidades perdidas."*
