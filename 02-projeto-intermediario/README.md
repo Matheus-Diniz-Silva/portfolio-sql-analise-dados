@@ -63,12 +63,6 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 
 ## Insights Técnicos da Análise
 
-### Modelo Relacional Dominado
-CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
- → ORDER_PAYMENTS
- → ORDER_REVIEWS
-ORDER_ITEMS → SELLERS
-
 ### Análise de Cohort Implementada
 - Métrica calculada: TIMESTAMPDIFF(MONTH, primeira_compra, compra_atual)
 - Agrupamento por mês de ingresso (cohort_month)
