@@ -1,92 +1,89 @@
-# Projeto 01: Análise de Vendas Básica
+# Projeto 02: Análise de E-commerce Complexa
 
 ## Objetivo
-Análise inicial de um dataset de vendas para identificar tendências e métricas fundamentais de negócio, demonstrando habilidades fundamentais em SQL para análise exploratória.
+Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionadas, demonstrando habilidades em SQL intermediário-avançado e identificação de insights estratégicos de negócio.
 
 ## Dataset
-**Sample Sales Data** - Dados de vendas de produtos com informações de clientes, produtos e transações.
+**Brazilian E-Commerce Dataset by Olist**
+- **Período**: Set/2016 a Out/2018 (773 dias)
+- **9 tabelas relacionadas**
+- **96.478 clientes únicos**
+- **R$13.4M+** em vendas analisadas
+- **3.095 vendedores** no marketplace
+- **32.951 produtos** diferentes
 
-**Período Analisado:** 2003-2005  
-**Total de Registros:** 2.823 vendas  
-**Faturamento Total:** $10,032,628.85
+*Para detalhes completos do dataset, consulte [data/dataset_info.md](./data/dataset_info.md)*
 
 ## Principais Descobertas
 
-### Sazonalidade e Tendências
-- **Novembro é o mês de pico**: +81% a +96% de crescimento vs Outubro
-- **Padrão sazonal previsível**: Q4 (Out-Nov-Dez) sempre forte, Q1 mais moderado
-- **Crescimento orgânico**: 2005 superando anos anteriores em vários meses
-- **Queda significativa em Dezembro**: -65% a -74% vs Novembro
+### DIAGNÓSTICO CRÍTICO: PROBLEMA DE RETENÇÃO
+- **0% de retenção de clientes** - todos os 96.478 clientes fizeram apenas 1 compra
+- **Empresa 100% dependente** de aquisição de novos clientes
+- **Oportunidade perdida** em receita recorrente estimada em milhões
+- **Crescimento baseado apenas** em novos clientes, sem fidelização
 
-### Estratégia de Negócios
-- **Negócios Medium são a base**: 49% do faturamento com volume equilibrado
-- **Large Deals super eficientes**: Apenas 5.56% das vendas geram 25% do faturamento
-- **Ticket médio variável**: Small: $2,062 | Medium: $4,398 | Large: $8,294
+### PERFORMANCE COMERCIAL
+- **Crescimento consistente** de base de clientes (1 → 7.289 clientes/mês)
+- **Pico em Nov/2017**: 7.289 novos clientes (Black Friday)
+- **SP domina faturamento**: 50% das vendas (R$5M+) com 40.501 clientes
+- **RJ e MG** seguem como mercados secundários importantes
 
-### Distribuição Geográfica
-- 19 países atendidos
-- 92 clientes únicos
-- Presença global consolidada
+### COMPORTAMENTO DE GASTO
+- **Ticket médio variável**: R$125 (SP) até R$217 (PB)
+- **Estados menores = tickets maiores**: PB (R$217), AL (R$198), AC (R$199)
+- **Clientes high-ticket**: Compram 1x (R$4K-13K) e não retornam
+- **Categoria Beleza & Saúde**: Produtos mais lucrativos (R$63K em vendas)
 
-## Habilidades Demonstradas
-- **Consultas SQL básicas**: SELECT, WHERE, ORDER BY, GROUP BY
-- **Junções e Agregações**: COUNT, SUM, AVG, MIN, MAX
-- **Análise Temporal**: Tendências e sazonalidade
-- **Análise para Negócios**: Criação de métricas e KPIs
+### PERFORMANCE DE ENTREGAS
+- **Nota média de satisfação**: 4.09/5 ⭐
+- **Satisfação geral**: 74.81% (notas 4-5)
+- **Insatisfação**: 14.81% (notas 1-2)
+- **Análise completa** de correlação entre entregas e avaliações
 
-## Queries Desenvolvidas
+## 🛠 Habilidades Demonstradas
+- **CTEs (Common Table Expressions)**
+- **Múltiplos JOINs complexos** entre 9 tabelas
+- **Funções de Janela (Window Functions)**
+- **Análise de Cohort e Retenção**
+- **Subqueries Correlacionadas**
+- **Análise Geográfica Avançada**
+- **Análise Temporal com Sazonalidade**
+- **Métricas de Satisfação e Performance**
 
-### 1. `01_exploracao_inicial.sql`
-- Visão geral do dataset
-- Distribuição por status de pedido
-- Análise de linhas de produto
-- Distribuição geográfica
-- Sazonalidade básica
+## Estrutura do Projeto
 
-### 2. `02_analise_vendas.sql`
-- Top 10 produtos mais vendidos
-- Métricas de performance por linha de produto
-- Análise de preços vs MSRP
-- Eficiência por tamanho de negócio
+### `data/`
+- **`dataset_info.md`** - Metadados completos do dataset Olist
 
-### 3. `03_metricas_negocio.sql`
-- Ticket médio por cliente
-- Top 10 clientes mais valiosos
-- Análise de retenção de clientes
-- Eficiência por território
-- Sazonalidade avançada com variação percentual
+### `queries/`
+- **`01_modelagem_dados.sql`** - Análise da estrutura e relacionamentos
+- **`02_analise_vendas.sql`** - Performance comercial e métricas
+- **`03_analise_clientes.sql`** - Comportamento e retenção (insight principal)
+- **`04_analise_entregas.sql`** - Logística e satisfação
 
-## Insights Estratégicos
+## Recomendações Estratégicas
 
-### Recomendações de Negócio:
-1. **Otimizar estoque** para picos de Novembro
-2. **Focar em converter** Small → Medium deals
-3. **Buscar mais Large deals** devido à alta eficiência
-4. **Planejar campanhas** agressivas para Setembro-Outubro
-5. **Preparar estrutura** para queda de Dezembro
+### PRIORIDADE MÁXIMA: PROGRAMA DE FIDELIDADE
+1. **Criar programa de pontos** e recompensas para segunda compra
+2. **Campanhas de remarketing** pós-30 dias para clientes inativos
+3. **Ofertas exclusivas** para "clientes perdidos" de alto valor
+4. **Clube VIP** para clientes high-ticket (R$4K+)
 
-### Oportunidades Identificadas:
-- Crescimento consistente ano a ano
-- Clientes fiéis com múltiplas compras
-- Sazonalidade previsível para planejamento
-- Espaço para expansão em territórios menos explorados
+### METAS DE CURTO PRAZO
+- **3 meses**: 5% de retenção no mês 2
+- **6 meses**: 10% de clientes com 2+ compras
+- **1 ano**: 15% de repeat rate
 
-## Como Executar
+### OTIMIZAÇÕES OPERACIONAIS
+- **Focar em estados** com alto ticket médio (PB, AL, AC)
+- **Expandir categorias** de Beleza & Saúde (alto faturamento)
+- **Melhorar comunicação** pós-venda para aumentar retenção
 
-1. **Importe o dataset** para seu banco MySQL
-2. **Execute as queries** em ordem numérica
-3. **Analise os resultados** comparando com os insights aqui documentados
+## Insights Técnicos da Análise
 
-## Tecnologias Utilizadas
-- MySQL
-- SQL para análise exploratória
-- Funções de agregação
-- Análise de tendências temporais
-
----
-
-*"Dados não são apenas números, são histórias esperando para ser contadas."*
-
----
-**Tecnologias**: MySQL, SQL Básico, Análise de Negócios  
-**Repositório**: [GitHub - Portfolio SQL](https://github.com/Matheus-Diniz-Silva/portfolio-sql-analise-dados)
+### Modelo Relacional Dominado
+```sql
+CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
+                    → ORDER_PAYMENTS  
+                    → ORDER_REVIEWS
+ORDER_ITEMS → SELLERS
