@@ -16,26 +16,26 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 
 ## Principais Descobertas
 
-### DIAGNÓSTICO CRÍTICO: PROBLEMA DE RETENÇÃO
+### Diagnóstico Crítico: Problema de Retenção
 - **0% de retenção de clientes** - todos os 96.478 clientes fizeram apenas 1 compra
 - **Empresa 100% dependente** de aquisição de novos clientes
 - **Oportunidade perdida** em receita recorrente estimada em milhões
 - **Crescimento baseado apenas** em novos clientes, sem fidelização
 
-### PERFORMANCE COMERCIAL
+### Performance Comercial
 - **Crescimento consistente** de base de clientes (1 → 7.289 clientes/mês)
 - **Pico em Nov/2017**: 7.289 novos clientes (Black Friday)
 - **SP domina faturamento**: 50% das vendas (R$5M+) com 40.501 clientes
 - **RJ e MG** seguem como mercados secundários importantes
 
-### COMPORTAMENTO DE GASTO
+### Comportamento de Gasto
 - **Ticket médio variável**: R$125 (SP) até R$217 (PB)
 - **Estados menores = tickets maiores**: PB (R$217), AL (R$198), AC (R$199)
 - **Clientes high-ticket**: Compram 1x (R$4K-13K) e não retornam
 - **Categoria Beleza & Saúde**: Produtos mais lucrativos (R$63K em vendas)
 
-### PERFORMANCE DE ENTREGAS
-- **Nota média de satisfação**: 4.09/5 ⭐
+### Performance de Entregas
+- **Nota média de satisfação**: 4.09/5
 - **Satisfação geral**: 74.81% (notas 4-5)
 - **Insatisfação**: 14.81% (notas 1-2)
 - **Análise completa** de correlação entre entregas e avaliações
@@ -52,38 +52,59 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 
 ## Estrutura do Projeto
 
-### `data/`
-- **`dataset_info.md`** - Metadados completos do dataset Olist
+### data/
+- **dataset_info.md** - Metadados completos do dataset Olist
 
-### `queries/`
-- **`01_modelagem_dados.sql`** - Análise da estrutura e relacionamentos
-- **`02_analise_vendas.sql`** - Performance comercial e métricas
-- **`03_analise_clientes.sql`** - Comportamento e retenção (insight principal)
-- **`04_analise_entregas.sql`** - Logística e satisfação
+### queries/
+- **01_modelagem_dados.sql** - Análise da estrutura e relacionamentos
+- **02_analise_vendas.sql** - Performance comercial e métricas
+- **03_analise_clientes.sql** - Comportamento e retenção (insight principal)
+- **04_analise_entregas.sql** - Logística e satisfação
+
+## Insights Técnicos da Análise
+
+### Modelo Relacional Dominado
+CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
+ → ORDER_PAYMENTS
+ → ORDER_REVIEWS
+ORDER_ITEMS → SELLERS
+
+### Análise de Cohort Implementada
+- Métrica calculada: TIMESTAMPDIFF(MONTH, primeira_compra, compra_atual)
+- Agrupamento por mês de ingresso (cohort_month)
+- Cálculo de retenção mês a mês
 
 ## Recomendações Estratégicas
 
-### PRIORIDADE MÁXIMA: PROGRAMA DE FIDELIDADE
+### Prioridade Máxima: Programa de Fidelidade
 1. **Criar programa de pontos** e recompensas para segunda compra
 2. **Campanhas de remarketing** pós-30 dias para clientes inativos
 3. **Ofertas exclusivas** para "clientes perdidos" de alto valor
 4. **Clube VIP** para clientes high-ticket (R$4K+)
 
-### METAS DE CURTO PRAZO
+### Metas de Curto Prazo
 - **3 meses**: 5% de retenção no mês 2
 - **6 meses**: 10% de clientes com 2+ compras
 - **1 ano**: 15% de repeat rate
 
-### OTIMIZAÇÕES OPERACIONAIS
+### Otimizações Operacionais
 - **Focar em estados** com alto ticket médio (PB, AL, AC)
 - **Expandir categorias** de Beleza & Saúde (alto faturamento)
 - **Melhorar comunicação** pós-venda para aumentar retenção
 
-## Insights Técnicos da Análise
+## Como Executar
+1. **Importe o dataset** para seu banco MySQL
+2. **Consulte os metadados** em data/dataset_info.md
+3. **Execute as queries** em ordem numérica
+4. **Analise os resultados** comparando com os insights documentados
 
-### Modelo Relacional Dominado
-```sql
-CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
-                    → ORDER_PAYMENTS  
-                    → ORDER_REVIEWS
-ORDER_ITEMS → SELLERS
+## Impacto do Projeto
+Esta análise identificou um problema estratégico crítico que impacta diretamente a sustentabilidade do negócio, demonstrando como SQL avançado pode gerar insights com impacto financeiro significativo. O diagnóstico de 0% de retenção representa uma oportunidade de melhoria de milhões em receita recorrente.
+
+---
+
+"Dados não são apenas números - são histórias de negócio esperando para ser contadas."
+
+---
+**Tecnologias**: MySQL, SQL Avançado, Análise de Negócios  
+**Repositório**: [GitHub - Portfolio SQL](https://github.com/Matheus-Diniz-Silva/portfolio-sql-analise-dados)
