@@ -20,11 +20,11 @@ Dataset completo de um e-commerce brasileiro com dados reais de vendas, clientes
 
 ## Modelo Relacional
 
+```sql
 CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
                     → ORDER_PAYMENTS  
                     → ORDER_REVIEWS
 ORDER_ITEMS → SELLERS
-
 
 ## Estatísticas Principais
 - **Período**: Set/2016 a Out/2018 (773 dias)
