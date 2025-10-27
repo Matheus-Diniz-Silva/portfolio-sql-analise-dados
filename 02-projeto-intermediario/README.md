@@ -9,8 +9,10 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 - **9 tabelas relacionadas**
 - **96.478 clientes únicos**
 - **R$13.4M+** em vendas analisadas
-- **2.823** produtos diferentes
-- **3.095** vendedores no marketplace
+- **3.095 vendedores** no marketplace
+- **32.951 produtos** diferentes
+
+*Para detalhes completos do dataset, consulte [data/dataset_info.md](./data/dataset_info.md)*
 
 ## Principais Descobertas
 
@@ -36,7 +38,7 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 - **Nota média de satisfação**: 4.09/5 ⭐
 - **Satisfação geral**: 74.81% (notas 4-5)
 - **Insatisfação**: 14.81% (notas 1-2)
-- **Entregas no prazo**: Análise por estado disponível
+- **Análise completa** de correlação entre entregas e avaliações
 
 ## Habilidades Demonstradas
 - **CTEs (Common Table Expressions)**
@@ -48,34 +50,16 @@ Análise avançada de um e-commerce brasileiro com múltiplas tabelas relacionad
 - **Análise Temporal com Sazonalidade**
 - **Métricas de Satisfação e Performance**
 
-## Queries Desenvolvidas
+## Estrutura do Projeto
 
-### 1. `01_modelagem_dados.sql`
-- Análise da estrutura e relacionamentos entre tabelas
-- Verificação de chaves primárias e estrangeiras
-- Período temporal dos dados (773 dias de operação)
-- Contagem de registros por tabela
+### `data/`
+- **`dataset_info.md`** - Metadados completos do dataset Olist
 
-### 2. `02_analise_vendas.sql`
-- Evolução mensal de vendas e crescimento
-- Performance por categoria de produto
-- Top 10 produtos mais vendidos (valor e quantidade)
-- Top 10 vendedores mais eficientes
-- Análise de preços vs MSRP
-
-### 3. `03_analise_clientes.sql` → **INSIGHT PRINCIPAL**
-- **Análise de cohort** (retenção zero identificada)
-- Clientes mais valiosos (Lifetime Value)
-- Comportamento geográfico por estado
-- Estatísticas de recorrência (100% única compra)
-- Distribuição geográfica de clientes e receita
-
-### 4. `04_analise_entregas.sql`
-- Performance de entrega por estado
-- Correlação entre tempo de entrega e avaliações
-- Análise de avaliações por categoria de produto
-- Top e Bottom vendedores por satisfação
-- Métricas gerais de satisfação do cliente
+### `queries/`
+- **`01_modelagem_dados.sql`** - Análise da estrutura e relacionamentos
+- **`02_analise_vendas.sql`** - Performance comercial e métricas
+- **`03_analise_clientes.sql`** - Comportamento e retenção (insight principal)
+- **`04_analise_entregas.sql`** - Logística e satisfação
 
 ## Recomendações Estratégicas
 
