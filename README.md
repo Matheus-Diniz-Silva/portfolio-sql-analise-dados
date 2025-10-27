@@ -1,18 +1,18 @@
 # Portfólio de Análise de Dados com SQL
 
-Bem-vindo ao meu repositório de projetos SQL! Este espaço é dedicado a demonstrar minhas habilidades em **SQL para Análise de Dados**, desde consultas básicas até análises complexas para suporte à tomada de decisão.
+Bem-vindo ao meu repositório de projetos SQL! Este espaço é dedicado a demonstrar minhas habilidades em SQL para Análise de Dados, desde consultas básicas até análises complexas para suporte à tomada de decisão.
 
 ## Sobre
 
-Sou um Analista de Dados em formação e aqui documentoo minha jornada de aprendizado e aplicação prática do SQL. Acredito que a simplicidade e a clareza são fundamentais para uma boa análise.
+Sou um Analista de Dados em formação e aqui documento minha jornada de aprendizado e aplicação prática do SQL. Acredito que a simplicidade e a clareza são fundamentais para uma boa análise.
 
 ## Habilidades Demonstradas
 
-- **Consultas SQL**: `SELECT`, `WHERE`, `ORDER BY`, `GROUP BY`
-- **Junções**: `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL OUTER JOIN`
-- **Agregações**: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
+- **Consultas SQL**: SELECT, WHERE, ORDER BY, GROUP BY
+- **Junções**: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN
+- **Agregações**: COUNT, SUM, AVG, MIN, MAX
 - **Subconsultas e CTEs (Common Table Expressions)**
-- **Funções de Janela**: `ROW_NUMBER()`, `RANK()`, `PARTITION BY`
+- **Funções de Janela**: ROW_NUMBER(), RANK(), PARTITION BY
 - **Análise para Negócios**: Criação de métricas e KPIs
 
 ## Projetos
@@ -31,15 +31,26 @@ Abaixo estão os projetos em ordem crescente de complexidade:
 - **Resultados:** Identificação de 0% retenção de clientes, análise geográfica avançada
 - **Insights:** Problema estratégico crítico com recomendações acionáveis
 
-### [Projeto 03: Otimização de Performance de Consultas](/03-projeto-avancado)
-**Objetivo:** Análise de performance e criação de índices estratégicos.
-- **Conceitos-chave:** Análise de plano de execução, criação de índices.
-- **Resultados:** Relatório de consultas otimizadas e ganho de performance.
+## Estrutura dos Projetos
+
+Cada projeto segue uma estrutura padronizada:
+
+- **data/** - Metadados e informações sobre o dataset
+- **queries/** - Arquivos SQL com as análises realizadas
+- **README.md** - Documentação completa do projeto
+
+## Tecnologias Utilizadas
+
+- MySQL
+- SQL para análise exploratória e avançada
+- GitHub para versionamento e documentação
+- Análise de negócios e métricas estratégicas
 
 ## Contato
 
-[LinkedIn](www.linkedin.com/in/matheusdinizsilva) | [Email](matheus.dinizbrito@gmail.com) | [GitHub](github.com/Matheus-Diniz-Silva)
+- **LinkedIn:** [Seu LinkedIn Aqui](https://www.linkedin.com/in/seu-linkedin)
+- **E-mail:** seu.email@provedor.com
 
 ---
 
-*“Dados não são informação, informação não é conhecimento, conhecimento não é entendimento.” – Clifford Stoll*
+*"Dados não são informação, informação não é conhecimento, conhecimento não é entendimento." – Clifford Stoll*
