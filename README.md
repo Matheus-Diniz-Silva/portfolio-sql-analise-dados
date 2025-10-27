@@ -25,10 +25,11 @@ Abaixo estão os projetos em ordem crescente de complexidade:
 - **Resultados:** Padrões de sazonalidade, eficiência por tamanho de deal, clientes mais valiosos
 - **Insights:** Novembro como mês de pico (+96% crescimento), Large deals com 25% do faturamento
 
-### [Projeto 02: Análise de E-commerce](/02-projeto-intermediario)
-**Objetivo:** Análise completa de um e-commerce fictício.
-- **Conceitos-chave:** CTEs, múltiplos JOINs, funções de data.
-- **Resultados:** Taxa de retenção de clientes, ticket médio, sazonalidade.
+### [Projeto 02: Análise de E-commerce Complexa](/02-projeto-intermediario)
+**Objetivo:** Análise avançada de e-commerce com múltiplas tabelas relacionadas.
+- **Conceitos-chave:** CTEs, JOINs complexos, funções de janela, análise de cohort
+- **Resultados:** Identificação de 0% retenção de clientes, análise geográfica avançada
+- **Insights:** Problema estratégico crítico com recomendações acionáveis
 
 ### [Projeto 03: Otimização de Performance de Consultas](/03-projeto-avancado)
 **Objetivo:** Análise de performance e criação de índices estratégicos.
