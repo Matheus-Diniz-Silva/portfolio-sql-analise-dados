@@ -24,8 +24,6 @@ CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
 → ORDER_REVIEWS
 ORDER_ITEMS → SELLERS
 
-text
-
 ## Estatísticas Principais
 - **Período**: Set/2016 a Out/2018 (773 dias)
 - **Total de clientes**: 96.478 (100% única compra)
