@@ -21,8 +21,8 @@ Dataset completo de um e-commerce brasileiro com dados reais de vendas, clientes
 ## Modelo Relacional
 
 CUSTOMERS → ORDERS → ORDER_ITEMS → PRODUCTS
-→ ORDER_PAYMENTS
-→ ORDER_REVIEWS
+                    → ORDER_PAYMENTS  
+                    → ORDER_REVIEWS
 ORDER_ITEMS → SELLERS
 
 
