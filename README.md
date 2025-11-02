@@ -64,5 +64,5 @@ Este portfólio será complementado com projetos em Python para análise de dado
 
 ---
 **Contato:**
-- **LinkedIn:**(https://www.linkedin.com/in/matheusdinizsilva)
+- **LinkedIn:** (https://www.linkedin.com/in/matheusdinizsilva)
 - **E-mail:** matheus.dinizbrito@gmail.com
